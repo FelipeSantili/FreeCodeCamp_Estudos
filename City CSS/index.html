@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Skyline</title>
-    <link href="styles.css" rel="stylesheet" />   
+    <link href="styles.css" rel="stylesheet" /> 
+    <link href="dark-theme.css" rel="stylesheet" />   
   </head>
 
   <body>
     
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <div class="background-buildings sky">
 
     <div class="background-buildings sky">
       <div></div>
@@ -82,5 +86,24 @@
       <div></div>
       <div></div>
     </div>
+
+    <script>
+      
+      function toggleTheme() {
+        
+        var themeStyle = document.getElementById('theme-style');
+
+        
+        var isDarkMode = document.body.classList.contains('dark-theme');
+
+    
+        if (isDarkMode) {
+          document.body.classList.remove('dark-theme');
+        } else {
+          document.body.classList.add('dark-theme');
+        }
+      }
+    </script>
+
   </body>
 </html>

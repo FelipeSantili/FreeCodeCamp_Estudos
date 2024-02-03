@@ -1,0 +1,19 @@
+
+
+:root {
+    --building-color1: #4422aa;
+    --building-color2: #115544;
+    --building-color3: #994466;
+    --building-color4: #325688;
+    --window-color1: #7766aa;
+    --window-color2: #448877;
+    --window-color3: #aa6688;
+    --window-color4: #5588aa;
+  }
+  
+  body.dark-theme {
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  
